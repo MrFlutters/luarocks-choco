@@ -19,7 +19,7 @@
         <description>LuaRocks is the package manager for Lua modules. It allows you to create and install Lua modules as self-contained packages called rocks. LuaRocks is free software and uses the same license as Lua.</description>
         <releaseNotes>https://luarocks.org/changes</releaseNotes>
         <copyright>Copyright 2007-2014 Kepler Project.</copyright>
-        <tags>luarocks lua admin</tags>
+        <tags>luarocks lua</tags>
     </metadata>
     <files>
         <file src="tools\**" target="tools" />
