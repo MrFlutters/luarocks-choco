@@ -1,10 +1,10 @@
-$luarocksZipName = "luarocks-2.4.3-win32"
+$luarocksZipName = "luarocks-2.4.4-win32"
 $luarocksInstallerDir = (Join-Path "$env:TEMP" "$luarocksZipName")
 $luarocksInstallDir = (Join-Path "$env:ChocolateyPackageFolder" "$luarocksZipName")
 
 Install-ChocolateyZipPackage -PackageName 'luarocks' `
  -Url "https://luarocks.github.io/luarocks/releases/$luarocksZipName.zip" `
- -Checksum '08821ec39e7c3ad20f5b3d3e118ba8f1f5a7db6e6ad22e11eb5e8a2bdc95cbfb' -ChecksumType 'sha256' `
+ -Checksum '763d2fbe301b5f941dd5ea4aea485fb35e75cbbdceca8cc2f18726b75f9895c1' -ChecksumType 'sha256' `
  -UnzipLocation "$luarocksInstallerDir"
 
 # Run the installer script.
