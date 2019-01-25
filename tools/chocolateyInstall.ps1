@@ -10,7 +10,7 @@ Install-ChocolateyZipPackage -PackageName 'luarocks' `
 # Run the installer script.
 # https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Windows
 Push-Location -Path "$(Join-Path "$luarocksInstallerDir" "$luarocksZipName")"
-& .\install.bat /NOADMIN /SELFCONTAINED /L /Q /P /MW "$luarocksInstallDir"
+& .\install.bat /NOADMIN /SELFCONTAINED /MW /L /Q /P "$luarocksInstallDir"
 Pop-Location
 
 Remove-Item "$luarocksInstallerDir" -Force -Recurse
